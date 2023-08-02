@@ -11,10 +11,6 @@ export const metadata: Metadata = {
   description: "AI Powered Word of the Day",
 };
 
-export function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "es" }];
-}
-
 export default function RootLayout({
   children,
   params,
