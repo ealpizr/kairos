@@ -4,5 +4,14 @@
     "comingSoon": "Coming soon! We're building an exciting language exploration web app",
     "stayTuned": "Stay tuned for the launch!",
     "followOurProgress": "Follow our progress on"
+  },
+
+  "HeaderDropdown": {
+    "menuLanguageLabel": "Language",
+    "menuLanguageEnglish": "English",
+    "menuLanguageSpanish": "Spanish",
+    "menuThemeLabel": "Theme",
+    "menuThemeLight": "Light",
+    "menuThemeDark": "Dark"
   }
 }

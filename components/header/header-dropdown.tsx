@@ -17,14 +17,20 @@ import SpanishFlag from "~/public/flag-uk.png";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { IoSettings } from "react-icons/io5";
 
-export default function HeaderDropdown() {
+export default function HeaderDropdown({
+  headerTranslations,
+}: {
+  headerTranslations: any;
+}) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="h-8 aspect-square rounded-full outline-none border border-gray-200 grid place-items-center data-[state=open]:bg-gray-200">
         <IoSettings className="h-6 w-6" />
       </DropdownMenuTrigger>
       <DropdownMenuContent>
-        <DropdownMenuLabel>Language</DropdownMenuLabel>
+        <DropdownMenuLabel>
+          {headerTranslations("menuLanguageLabel")}
+        </DropdownMenuLabel>
         <DropdownMenuRadioGroup value="en">
           <DropdownMenuRadioItem value="es">
             <Image
@@ -32,7 +38,7 @@ export default function HeaderDropdown() {
               src={EnglishFlag}
               alt="English flag icon"
             />
-            <span>Spanish</span>
+            <span>{headerTranslations("menuLanguageSpanish")}</span>
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="en">
             <Image
@@ -40,19 +46,21 @@ export default function HeaderDropdown() {
               src={SpanishFlag}
               alt="Spanish flag icon"
             />
-            <span>English</span>
+            <span>{headerTranslations("menuLanguageEnglish")}</span>
           </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuLabel>Theme</DropdownMenuLabel>
+        <DropdownMenuLabel>
+          {headerTranslations("menuThemeLabel")}
+        </DropdownMenuLabel>
         <DropdownMenuRadioGroup>
           <DropdownMenuRadioItem value="light">
             <BsSunFill className="w-4 h-4 mr-2 text[var(--foreground)]" />
-            <span>Light</span>
+            <span>{headerTranslations("menuThemeLight")}</span>
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem value="dark">
             <BsMoonStarsFill className="w-4 h-4 mr-2 text[var(--foreground)]" />
-            <span>Dark</span>
+            <span>{headerTranslations("menuThemeDark")}</span>
           </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>

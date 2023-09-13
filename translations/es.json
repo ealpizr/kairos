@@ -4,5 +4,14 @@
     "comingSoon": "Estamos construyendo una emocionante aplicación web para aprender palabras",
     "stayTuned": "¡Está atento para el lanzamiento!",
     "followOurProgress": "Sigue nuestro progreso en"
+  },
+
+  "HeaderDropdown": {
+    "menuLanguageLabel": "Idioma",
+    "menuLanguageEnglish": "Inglés",
+    "menuLanguageSpanish": "Español",
+    "menuThemeLabel": "Tema",
+    "menuThemeLight": "Claro",
+    "menuThemeDark": "Oscuro"
   }
 }
